@@ -19,6 +19,25 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            float Summe = float.Parse(maskedTextBox1.Text) + float.Parse(maskedTextBox2.Text);
+            maskedTextBox3.Text = Summe.ToString();
+
+
+
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox3_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
 
         }
     }
